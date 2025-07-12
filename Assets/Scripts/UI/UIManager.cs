@@ -2,8 +2,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-[Serializable]
-public class UIManager
+public class UIManager: MonoBehaviour
 {
     [SerializeField] private BasicScreen[] _screens;
     [SerializeField] private BasicPopup[] _popups;
@@ -11,7 +10,7 @@ public class UIManager
 
     public static UIManager Instance { get; private set; }
 
-    public void Init()
+    public void Start()
     {
         if (Instance == null)
         {
@@ -27,7 +26,7 @@ public class UIManager
         }
     }
 
-    public void Destroy()
+    public void OnDestroy()
     {
         if (Instance != null)
         {
