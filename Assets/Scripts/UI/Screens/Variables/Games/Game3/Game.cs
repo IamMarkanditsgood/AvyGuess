@@ -1,21 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Game2MainMenu : BasicScreen
+public class Game : BasicScreen
 {
-    public Button home;
+    [SerializeField] private Button back;
 
     public override void Subscribe()
     {
         base.Subscribe();
-        home.onClick.AddListener(Home);
+        back.onClick.AddListener(Back);
     }
     public override void UnSubscribe()
     {
         base.UnSubscribe();
-        home.onClick.RemoveListener(Home);
+        back.onClick.RemoveListener(Back);
     }
     public override void ResetScreen()
     {
@@ -24,9 +22,8 @@ public class Game2MainMenu : BasicScreen
     public override void SetScreen()
     {
     }
-
-    public void Home()
+    private void Back()
     {
-        UIManager.Instance.ShowScreen(ScreenTypes.MainMenu);
+        UIManager.Instance.ShowScreen(ScreenTypes.Game3Teams);
     }
 }
