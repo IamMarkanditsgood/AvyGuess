@@ -25,4 +25,5 @@ public enum ScreenTypes
     Game3Main,
     GameResults,
     Default,
+    Game1Exit
 }

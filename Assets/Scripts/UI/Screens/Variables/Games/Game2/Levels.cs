@@ -45,6 +45,10 @@ public class Levels : BasicScreen
 
     public override void SetScreen()
     {
+        for (int i = 0; i < _categoryButtons.Length; i++)
+        {
+            _categoryButtons[i].GetComponent<Image>().sprite = unSellected[i];
+        }
         play.interactable = false;
     }
     private void Back()
@@ -83,7 +87,7 @@ public class Levels : BasicScreen
     {
         if (_selectedCategoryIndex >= 0 && _selectedCategoryIndex < gameConfigs.Length)
         {
-
+            DataManager.Instance.gameConfig = gameConfigs[_selectedCategoryIndex];
             UIManager.Instance.ShowScreen(ScreenTypes.Game2Main);
         }
     }

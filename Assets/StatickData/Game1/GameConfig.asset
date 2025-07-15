@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15e5c1b65b328c468d575d4b3eb441a, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
-  word: 
+  words:
+  - Nike
+  - Apple
+  - Coca-Cola
+  - Samsung
+  - Lego
+  - Disney
+  - McDonald's
+  - IKEA
+  - Adidas
+  - Starbucks
+  - Amazon
+  - Pepsi
+  - Google
+  - Sony
+  - Netflix
+  - YouTube
+  - Puma
+  - Toyota
+  - "Nestl\xE9"
+  - H&M
   wordLetters: 
   gameLetters: 

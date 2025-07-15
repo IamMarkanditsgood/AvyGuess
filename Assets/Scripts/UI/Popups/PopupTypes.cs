@@ -7,4 +7,5 @@ public enum PopupTypes
     Pause,
     Default,
     Message,
+    Game1Exit
 }

@@ -45,6 +45,10 @@ public class Categories : BasicScreen
 
     public override void SetScreen()
     {
+        for (int i = 0; i < _categoryButtons.Length; i++)
+        {
+            _categoryButtons[i].GetComponent<Image>().sprite = unSellected[i];
+        }
         play.interactable = false;
     }
     private void Back()

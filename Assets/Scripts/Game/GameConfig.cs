@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameConfig : ScriptableObject
 {
 
-    public string word;
+    public List<string> words;
     [Header("For game 3")]
     public List<char> wordLetters;
     public List<char> gameLetters; 
