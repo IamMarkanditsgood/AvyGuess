@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 [Serializable] 
 public class ResultManager
 {
@@ -18,7 +19,7 @@ public class ResultManager
     private Game1Manager manager;
     public Transform container;
     public WordResult result;
-
+    private List<WordResult> panels = new List<WordResult>();
     public void Subscribe()
     {
         nextTeam.onClick.AddListener(NextTeam);
@@ -32,6 +33,11 @@ public class ResultManager
 
     public void ShowResults(int currentTeam, List<bool> results, Game1Manager game1Manager)
     {
+        foreach (var panel in panels)
+        {
+            UnityEngine.Object.Destroy(panel.gameObject);
+        }
+        panels.Clear();
         Screen.orientation = ScreenOrientation.Portrait;
         view .SetActive(true);
         manager = game1Manager;
@@ -41,6 +47,7 @@ public class ResultManager
         {
             WordResult panel = UnityEngine.Object.Instantiate(result, container);
             panel.SetResult(results[i], DataManager.Instance.gameConfig.words[i]);
+            panels.Add(panel);
             if (results[i])
                 correctneses++;
         }

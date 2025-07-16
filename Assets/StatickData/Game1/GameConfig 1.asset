@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15e5c1b65b328c468d575d4b3eb441a, type: 3}
   m_Name: GameConfig 1
   m_EditorClassIdentifier: 
-  word: 
+  words:
+  - Albert Einstein
+  - Elvis Presley
+  - Taylor Swift
+  - Leonardo da Vinci
+  - Oprah Winfrey
+  - Tom Cruise
+  - Marilyn Monroe
+  - Michael Jackson
+  - Cleopatra
+  - ' Elon Musk'
+  - "Beyonc\xE9"
+  - Charlie Chaplin
+  - William Shakespeare
+  - Rihanna
+  - Usain Bolt
+  - Adele
+  - Stephen Hawking
+  - Brad Pitt
+  - Lady Gaga
+  - Barack Obama
   wordLetters: 
   gameLetters: 

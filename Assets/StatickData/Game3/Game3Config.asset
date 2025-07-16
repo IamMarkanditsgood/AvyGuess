@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 252ea5efa369c88438591c99a8759932, type: 3}
+  m_Name: Game3Config
+  m_EditorClassIdentifier: 
+  words:
+  - word: BUTTERFLY
+    letters: BLTFEYRTUAPXOMND
+    closedImage: {fileID: 21300000, guid: 75c75c3c793f0244397b0c031b8e631d, type: 3}
+    openedImage: {fileID: 21300000, guid: 4ffc2c52a356cbf44aef54665d70cf31, type: 3}
+    wordLetters: 42005500540054004500520046004c005900
+    gameLetters: 42004c0054004600450059005200540055004100500058004f004d004e004400
+  - word: AIRPLANE
+    letters: AXNRVJAEZPITLQMS
+    closedImage: {fileID: 21300000, guid: 565fd13367588734080197c8f7876111, type: 3}
+    openedImage: {fileID: 21300000, guid: 66e62556a906cb74f98e4f35d80b0857, type: 3}
+    wordLetters: 41004900520050004c0041004e004500
+    gameLetters: 410058004e00520056004a00410045005a005000490054004c0051004d005300
+  - word: HELICOPTER
+    letters: FHTORXKPQCLEJEGI
+    closedImage: {fileID: 21300000, guid: 470cb9a4a3b149d4bbf74d525557be67, type: 3}
+    openedImage: {fileID: 21300000, guid: b4a1b48568642b142851a0c64c486671, type: 3}
+    wordLetters: 480045004c00490043004f005000540045005200
+    gameLetters: 4600480054004f00520058004b005000510043004c0045004a00450047004900
+  - word: BICYCLE
+    letters: CERLQJVICYKDDZBN
+    closedImage: {fileID: 21300000, guid: d8593b213b346d74eb6f5d03a12f2cbc, type: 3}
+    openedImage: {fileID: 21300000, guid: 4c67176b7219f934d82b2f9f95584337, type: 3}
+    wordLetters: 420049004300590043004c004500
+    gameLetters: 4300450052004c0051004a0056004900430059004b00440044005a0042004e00
+  - word: MOTORCYCLE
+    letters: LDUYECCAOORNMPTF
+    closedImage: {fileID: 21300000, guid: 811dda88cb45aea45aa572f25f01732e, type: 3}
+    openedImage: {fileID: 21300000, guid: 5151799f0b84b2f429a38e3c05c62ffd, type: 3}
+    wordLetters: 4d004f0054004f0052004300590043004c004500
+    gameLetters: 4c0044005500590045004300430041004f004f0052004e004d00500054004600
+  - word: DOLPHIN
+    letters: PZNFYOWALYDKIHUS
+    closedImage: {fileID: 21300000, guid: ad951455e8e9d9c4b89407b87c490f83, type: 3}
+    openedImage: {fileID: 21300000, guid: af874c6350abcfe4dba6a98ebf72ebe4, type: 3}
+    wordLetters: 44004f004c005000480049004e00
+    gameLetters: 50005a004e00460059004f00570041004c00590044004b004900480055005300
+  - word: CAMERA
+    letters: WLJCKZMEABRDQYAU
+    closedImage: {fileID: 21300000, guid: 7c19e30716144524e92c36f018a290fc, type: 3}
+    openedImage: {fileID: 21300000, guid: c4a111903def9ba47b6dc51860b7a571, type: 3}
+    wordLetters: 430041004d00450052004100
+    gameLetters: 57004c004a0043004b005a004d00450041004200520044005100590041005500
+  - word: TURTLE
+    letters: UTREYPNKAGLTDZQB
+    closedImage: {fileID: 21300000, guid: 0d803a9a52417b0498b077eb36cb1113, type: 3}
+    openedImage: {fileID: 21300000, guid: f3279f765d9019840bf009cbb7c71528, type: 3}
+    wordLetters: 54005500520054004c004500
+    gameLetters: 5500540052004500590050004e004b00410047004c00540044005a0051004200
+  - word: BLIMP
+    letters: BMFIRDLWPXATNZOC
+    closedImage: {fileID: 21300000, guid: 51f22019f0f53cd44ada2dfc0f50f33b, type: 3}
+    openedImage: {fileID: 21300000, guid: 8cd6ba5f241fe584bab0f46ddc639d8f, type: 3}
+    wordLetters: 42004c0049004d005000
+    gameLetters: 42004d0046004900520044004c00570050005800410054004e005a004f004300
+  - word: PIG
+    letters: IBJPZRSEDMQNGHUT
+    closedImage: {fileID: 21300000, guid: 87cbc15efc08e8b43a42b6f12d6013aa, type: 3}
+    openedImage: {fileID: 21300000, guid: cb3261b7410bba24ea60740c638f2949, type: 3}
+    wordLetters: 500049004700
+    gameLetters: 490042004a0050005a0052005300450044004d0051004e004700480055005400
+  - word: MUG
+    letters: MLUACXQJREVSGDHP
+    closedImage: {fileID: 21300000, guid: f0220c18abc195347985d3eb34203ef4, type: 3}
+    openedImage: {fileID: 21300000, guid: 7f3dee8c1fa463141807f945f64f6803, type: 3}
+    wordLetters: 4d0055004700
+    gameLetters: 4d004c00550041004300580051004a0052004500560053004700440048005000
+  - word: PENGUIN
+    letters: NWUSJAPGMIQEDLTN
+    closedImage: {fileID: 21300000, guid: f13b13722195c8d4ca0a9c5a16adc848, type: 3}
+    openedImage: {fileID: 21300000, guid: bd89f98c3f50312458a3ef2ff24bc87f, type: 3}
+    wordLetters: 500045004e004700550049004e00
+    gameLetters: 4e005700550053004a004100500047004d0049005100450044004c0054004e00
+  - word: MONKEY
+    letters: KROYMDNELFPQAICH
+    closedImage: {fileID: 21300000, guid: 5ff53e953a0f9bf45a3c2c79e86aa287, type: 3}
+    openedImage: {fileID: 21300000, guid: c814ae4c82b91f04b8dd12b216b1f557, type: 3}
+    wordLetters: 4d004f004e004b0045005900
+    gameLetters: 4b0052004f0059004d0044004e0045004c004600500051004100490043004800
+  - word: GOAT
+    letters: QAZWGTSXODKERMNL
+    closedImage: {fileID: 21300000, guid: 9da0bca1c0828b24aa201fc0fe57cfed, type: 3}
+    openedImage: {fileID: 21300000, guid: bb6b62ff59a74fd4093af03da952b4f5, type: 3}
+    wordLetters: 47004f0041005400
+    gameLetters: 510041005a00570047005400530058004f0044004b00450052004d004e004c00
+  - word: DUCK
+    letters: CRTJMDUBIOKAELNP
+    closedImage: {fileID: 21300000, guid: 76a00bb0d1adfce499be9df707d5bfb0, type: 3}
+    openedImage: {fileID: 21300000, guid: a689ab8e4fb3b844b959cc0d8cf8a514, type: 3}
+    wordLetters: 4400550043004b00
+    gameLetters: 4300520054004a004d0044005500420049004f004b00410045004c004e005000
+  - word: FLOWER
+    letters: ETALROQFKWMNPIXD
+    closedImage: {fileID: 21300000, guid: d9052c73c32847a40909166f1613b800, type: 3}
+    openedImage: {fileID: 21300000, guid: eda6fbe4c237e8d45b24f0028e9cb393, type: 3}
+    wordLetters: 46004c004f00570045005200
+    gameLetters: 4500540041004c0052004f00510046004b0057004d004e005000490058004400
+  - word: CAR
+    letters: AVEFDWRMCGZHJINO
+    closedImage: {fileID: 21300000, guid: 21433412375b6014995b0a6f3ff01ecb, type: 3}
+    openedImage: {fileID: 21300000, guid: 318e0efb4965db14187293351038d35d, type: 3}
+    wordLetters: 430041005200
+    gameLetters: 41005600450046004400570052004d00430047005a0048004a0049004e004f00
+  - word: COW
+    letters: BWQCMEOTXLZAPRIJ
+    closedImage: {fileID: 21300000, guid: 9b7e2d99125012c42a59307f4d7d116a, type: 3}
+    openedImage: {fileID: 21300000, guid: 84342db702307574f8398344a2640ce8, type: 3}
+    wordLetters: 43004f005700
+    gameLetters: 42005700510043004d0045004f00540058004c005a0041005000520049004a00
+  - word: CHICKEN
+    letters: ERCLNVQIXKCDPAHT
+    closedImage: {fileID: 21300000, guid: 53df902888f4f13478f0e42a656f6374, type: 3}
+    openedImage: {fileID: 21300000, guid: 737fcc0f6b3593c40b88894332a952c4, type: 3}
+    wordLetters: 43004800490043004b0045004e00
+    gameLetters: 4500520043004c004e0056005100490058004b00430044005000410048005400
+  - word: ELEPHANT
+    letters: HPFAENIRTLJVEDMO
+    closedImage: {fileID: 21300000, guid: 930ce58bf8e27cf4bac5ff5bbd8fd597, type: 3}
+    openedImage: {fileID: 21300000, guid: 96d5d4abacfdd334b8970707dfdf062c, type: 3}
+    wordLetters: 45004c0045005000480041004e005400
+    gameLetters: 480050004600410045004e004900520054004c004a005600450044004d004f00
+  - word: SCOOTER
+    letters: OCRLWVESTAPMQXKN
+    closedImage: {fileID: 21300000, guid: 529703820d857b343a605947b42bad6d, type: 3}
+    openedImage: {fileID: 21300000, guid: a3d1852fe68f144478a64eb4b0939bd5, type: 3}
+    wordLetters: 530043004f004f00540045005200
+    gameLetters: 4f00430052004c0057005600450053005400410050004d00510058004b004e00
+  - word: SEAGULL
+    letters: LGKPVTSLUAEQIRCN
+    closedImage: {fileID: 21300000, guid: 9ed959817dca0a5458a440de0955bf1d, type: 3}
+    openedImage: {fileID: 21300000, guid: d1eaaf880fb2db9468d63b920a285a93, type: 3}
+    wordLetters: 530045004100470055004c004c00
+    gameLetters: 4c0047004b0050005600540053004c0055004100450051004900520043004e00
+  - word: APPLE
+    letters: LABDPRJCEGXZMYIP
+    closedImage: {fileID: 21300000, guid: c0e82deec4d5cd04fa1f4fb58f3cfe6e, type: 3}
+    openedImage: {fileID: 21300000, guid: 454d9c3a16327134b8b510fab99d3be8, type: 3}
+    wordLetters: 4100500050004c004500
+    gameLetters: 4c00410042004400500052004a0043004500470058005a004d00590049005000
+  - word: PEAR
+    letters: TQWZRAYCPXLDMBEO
+    closedImage: {fileID: 21300000, guid: af21e152a4f644f4990986be8cc6c3e8, type: 3}
+    openedImage: {fileID: 21300000, guid: ed446e1efa0f1284bb929ad189e15464, type: 3}
+    wordLetters: 5000450041005200
+    gameLetters: 5400510057005a005200410059004300500058004c0044004d00420045004f00
+  - word: PINEAPPLE
+    letters: NACIEOWPPRLDTYKX
+    closedImage: {fileID: 21300000, guid: 3dd274c1efeebe24cb91dc15afabc0e9, type: 3}
+    openedImage: {fileID: 21300000, guid: ecb966346c2f2f742974eea5d3514df0, type: 3}
+    wordLetters: 500049004e0045004100500050004c004500
+    gameLetters: 4e0041004300490045004f0057005000500052004c004400540059004b005800

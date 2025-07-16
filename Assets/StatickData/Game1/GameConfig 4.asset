@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15e5c1b65b328c468d575d4b3eb441a, type: 3}
   m_Name: GameConfig 4
   m_EditorClassIdentifier: 
-  word: 
+  words:
+  - Doctor
+  - Pilot
+  - Chef
+  - Firefighter
+  - Teacher
+  - Police Officer
+  - Scientist
+  - Actor
+  - Musician
+  - Builder
+  - Dentist
+  - Lawyer
+  - Astronaut
+  - Farmer
+  - Artist
+  - Photographer
+  - Nurse
+  - Soldier
+  - Engineer
+  - Reporter
   wordLetters: 
   gameLetters: 

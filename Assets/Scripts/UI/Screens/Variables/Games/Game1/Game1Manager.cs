@@ -14,7 +14,7 @@ public class Game1Manager : BasicScreen
     [SerializeField] private Button startButton;
     [SerializeField] private GameObject screen3;
 
-    [SerializeField] private Button backButton;
+    [SerializeField] private Button[] backButton;
 
     [SerializeField] private TMP_Text _teamName;
     [SerializeField] private TMP_Text _timer;
@@ -104,8 +104,12 @@ public class Game1Manager : BasicScreen
     public override void Subscribe()
     {
         base.Subscribe();
-        
-        backButton.onClick.AddListener(Back);
+
+        for (int i = 0; i < backButton.Length; i++)
+        {
+            int index = i; // Capture the current index
+            backButton[index].onClick.AddListener(Back);
+        }
         continueButton.onClick.AddListener(Continue);
         startButton.onClick.AddListener(StartGame);
     }
@@ -114,7 +118,11 @@ public class Game1Manager : BasicScreen
     {
         base.UnSubscribe();
         resultManager.Unsubscribe();
-        backButton.onClick.RemoveListener(Back);
+        for (int i = 0; i < backButton.Length; i++)
+        {
+            int index = i; // Capture the current index
+            backButton[index].onClick.RemoveListener(Back);
+        }
         continueButton.onClick.RemoveListener(Continue);
         startButton.onClick.RemoveListener(StartGame);
     }
@@ -146,7 +154,7 @@ public class Game1Manager : BasicScreen
         {
             StopCoroutine(timer);
         }
-        UIManager.Instance.ShowPopup(PopupTypes.Game1Exit);
+        UIManager.Instance.ShowScreen(ScreenTypes.Game1Home);
     }
 
     private void Continue()
@@ -169,13 +177,13 @@ public class Game1Manager : BasicScreen
         screen3.SetActive(true);
         SetCurrentTeam();
         SetWord();
-        isSwiping = true;
+
 
         _correctAnswered = 0;
         _wrongAnswered = 0;
 
-        _correctAnswers.text = _correctAnswered + "Correct";
-        _wrongAnswers.text = _wrongAnswered + "Skipped";
+        _correctAnswers.text = _correctAnswered + "Correct ";
+        _wrongAnswers.text = _wrongAnswered + "Skipped ";
 
         _timer.text = "Time: 60";
 
@@ -187,6 +195,8 @@ public class Game1Manager : BasicScreen
             StopCoroutine(timer);
         }
         timer = StartCoroutine(GameTimer());
+
+        isSwiping = true;
     }
 
     private IEnumerator GameTimer()
@@ -220,7 +230,16 @@ public class Game1Manager : BasicScreen
     private void SetWord()
     {
         _word.text = GetRandomUniqueWord();
-        _currentWordIndex++;
+        Debug.Log("Current Word: " + _word.text);
+        for (int i = 0; i < gameConfig.words.Count; i++)
+        {
+
+            if (_word.text == gameConfig.words[i])
+            {
+                Debug.Log("Setting current word index to: " + i);
+                _currentWordIndex = i;
+            }
+        }
     }
     public string GetRandomUniqueWord()
     {

@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15e5c1b65b328c468d575d4b3eb441a, type: 3}
   m_Name: GameConfig 1
   m_EditorClassIdentifier: 
-  word: 
+  words:
+  - Jungle
+  - Rocket
+  - Pirate
+  - Castle
+  - Camera
+  - Cloud
+  - Candle
+  - Island
+  - Dragon
+  - Painter
+  - Submarine
+  - Helmet
+  - Laptop
+  - Telescope
+  - Pyramid
+  - Mountain
+  - Elevator
+  - Puzzle
+  - Mermaid
+  - Clock
   wordLetters: 
   gameLetters: 

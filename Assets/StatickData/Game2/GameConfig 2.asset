@@ -12,6 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15e5c1b65b328c468d575d4b3eb441a, type: 3}
   m_Name: GameConfig 2
   m_EditorClassIdentifier: 
-  word: 
+  words:
+  - Democracy
+  - Evolution
+  - Gravity
+  - Philosophy
+  - Strategy
+  - Illusion
+  - Magnetism
+  - Revolution
+  - Innovation
+  - Perspective
+  - Anonymity
+  - Algorithm
+  - Chaos
+  - Skepticism
+  - Artificial Intelligence
+  - Parallel Universe
+  - Empathy
+  - Deception
+  - Entropy
+  - Symbolism
   wordLetters: 
   gameLetters: 

@@ -30,7 +30,7 @@ public class Game2Manager : BasicScreen
     private int _correctAnswered = 0;
     private int _wrongAnswered = 0;
 
-    private int _currentWordIndex = 0;
+    private int _currentWordIndex = -1;
     private int _currentTeamIndex = 0;
 
     public int CurrentTeamIndex { get { return _currentTeamIndex; } set { _currentTeamIndex = value; } }
@@ -135,7 +135,7 @@ public class Game2Manager : BasicScreen
 
     public void StartGame()
     {
-
+        _currentWordIndex = -1;
         remainingWords = new List<string>(originalWords);
         results.Clear();
         foreach (var word in gameConfig.words)
@@ -154,7 +154,7 @@ public class Game2Manager : BasicScreen
 
         _timer.text = "Time: 60";
 
-        _currentWordIndex = 0;
+        
 
         SetCurrentTeam();
         if (timer != null)
@@ -195,7 +195,16 @@ public class Game2Manager : BasicScreen
     private void SetWord()
     {
         _word.text = GetRandomUniqueWord();
-        _currentWordIndex++;
+        Debug.Log("Current Word: " + _word.text );
+        for (int i =0;i < gameConfig.words.Count; i++)
+        {
+            
+            if (_word.text == gameConfig.words[i])
+            {
+                Debug.Log("Setting current word index to: " + i);
+                _currentWordIndex = i;
+            }
+        }
     }
     public string GetRandomUniqueWord()
     {
@@ -218,6 +227,7 @@ public class Game2Manager : BasicScreen
     {
         _correctAnswered++;
         _correctAnswers.text = _correctAnswered + "Correct";
+        Debug.Log(results.Count + " " + _currentWordIndex);
         results[_currentWordIndex] = true;
         SetWord();
     }
@@ -245,6 +255,8 @@ public class Result2Manager
     public Transform container;
     public WordResult result;
 
+    private List<WordResult> panels = new List<WordResult>();
+
     public void Subscribe()
     {
         nextTeam.onClick.AddListener(NextTeam);
@@ -258,6 +270,12 @@ public class Result2Manager
 
     public void ShowResults(int currentTeam, List<bool> results, Game2Manager game1Manager)
     {
+        foreach (var panel in panels)
+        {
+            UnityEngine.Object.Destroy(panel.gameObject);
+        }
+        panels.Clear();
+
         Screen.orientation = ScreenOrientation.Portrait;
         view.SetActive(true);
         manager = game1Manager;
@@ -267,6 +285,7 @@ public class Result2Manager
         {
             WordResult panel = UnityEngine.Object.Instantiate(result, container);
             panel.SetResult(results[i], DataManager.Instance.gameConfig.words[i]);
+            panels.Add(panel);
             if (results[i])
                 correctneses++;
         }
