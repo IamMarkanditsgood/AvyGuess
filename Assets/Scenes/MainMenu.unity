@@ -25407,7 +25407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 293c01233e790a447bc3cdc4a0dbaffd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2cdc4c08e3c5a464d9c00c22114d00f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26682,22 +26682,28 @@ MonoBehaviour:
   categories:
   - categoryImage: {fileID: 21300000, guid: 9108e2454320ade45a39cf860f293d00, type: 3}
     categoryName: Brands
-    categoryDescription: r
+    categoryDescription: " From smartphones and sneakers to soda and shopping \u2014
+      these are names you know for sure. Think logos, slogans, products, even commercials."
   - categoryImage: {fileID: 21300000, guid: 99fbeb23b2974b04c8a6466b9bd959e1, type: 3}
     categoryName: Famous People
-    categoryDescription: qwe
+    categoryDescription: " Musicians, scientists, actors, world leaders \u2014 this
+      category is full of names you\u2019ve definitely heard before."
   - categoryImage: {fileID: 21300000, guid: 6ed00e9c952a93b4e8d59bee37905d12, type: 3}
     categoryName: Cartoon
-    categoryDescription: dff
+    categoryDescription: " From classic cartoons to modern hits \u2014 talking animals,
+      silly faces, and magical worlds await."
   - categoryImage: {fileID: 21300000, guid: 38de1cd7c32c38b4292b82df644fdf14, type: 3}
     categoryName: Animals
-    categoryDescription: a
+    categoryDescription: " From jungles and oceans to farms and forests \u2014 these
+      creatures roar, swim, hop, and fly."
   - categoryImage: {fileID: 21300000, guid: fd030efd46f93754a87b837c58f7c136, type: 3}
     categoryName: Professions
-    categoryDescription: sd
+    categoryDescription: " Doctors, pilots, firefighters, astronauts \u2014 it's
+      all about what people do for a living."
   - categoryImage: {fileID: 21300000, guid: a40a1130ee69a7d4d8cf211b8879bcc0, type: 3}
     categoryName: Food & Drinks
-    categoryDescription: sd
+    categoryDescription: " From fast food and desserts to drinks and fruits \u2014
+      delicious fun without the calories."
 --- !u!1 &1589864011
 GameObject:
   m_ObjectHideFlags: 0
@@ -27489,7 +27495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1636859306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30718,6 +30724,7 @@ MonoBehaviour:
   _mainImage: {fileID: 1732060903}
   usedLatter: {fileID: 21300000, guid: e540c61f018d089448c632eb60988601, type: 3}
   notUsedLatter: {fileID: 21300000, guid: 33c81dcfab42a864e8351abece1e8241, type: 3}
+  currentSelectedLetters: 
 --- !u!1 &1808358206
 GameObject:
   m_ObjectHideFlags: 0
