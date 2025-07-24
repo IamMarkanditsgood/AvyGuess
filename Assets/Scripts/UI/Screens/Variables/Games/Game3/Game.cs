@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 using static Game3Config;
@@ -67,16 +66,16 @@ public class Game : BasicScreen
         base.UnSubscribe();
      
         back.onClick.RemoveListener(Back);
-        for (int i = 0; i < _wordImages.Length; i++)
+        /*for (int i = 0; i < _wordImages.Length; i++)
         {
             int index = i; // Capture the current index
             _wordImages[index].GetComponent<Button>().onClick.RemoveListener(() => LettedDeleted(index));
-        }
-        for (int i = 0; i < _awailableImages.Length; i++)
+        }*/
+       /* for (int i = 0; i < _awailableImages.Length; i++)
         {
             int index = i; // Capture the current index
             _awailableImages[index].GetComponent<Button>().onClick.RemoveListener(() => LetterPressed(index));
-        }
+        }*/
     }
     public override void ResetScreen()
     {

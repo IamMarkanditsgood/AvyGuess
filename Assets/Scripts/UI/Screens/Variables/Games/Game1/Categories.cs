@@ -53,7 +53,7 @@ public class Categories : BasicScreen
     }
     private void Back()
     {
-        UIManager.Instance.ShowScreen(ScreenTypes.Game1Categories);
+        UIManager.Instance.ShowScreen(ScreenTypes.Game1Teams);
     }
     public void OnCategoryButtonClick(int index)
     {

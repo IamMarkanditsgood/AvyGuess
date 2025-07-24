@@ -35,7 +35,7 @@ public class Info : BasicScreen
     }
     private void Privacy()
     {
-        Application.OpenURL("https://www.privacypolicygenerator.info/live.php?token");
+        Application.OpenURL("https://www.privacypolicies.com/live/46a5da90-4088-46fa-9bb8-27a290cdb6c8");
     }
     private void Back()
     {
